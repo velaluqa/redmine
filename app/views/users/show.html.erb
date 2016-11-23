@@ -1,4 +1,5 @@
 <div class="contextual">
+<%= call_hook(:view_account_contextual, :user => @user) %>
 <%= link_to(l(:button_edit), edit_user_path(@user), :class => 'icon icon-edit') if User.current.admin? %>
 </div>
 
